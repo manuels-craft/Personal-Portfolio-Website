@@ -5,17 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/styles/main.css">
-  <title>Manuel Nunez</title>
+  <title>Manuel Nunez | Personal Website</title>
 </head>
 
-<body>
-  <!-- header -->
+<body class="">
+  <button class="btn-exit">Exit Read mode</button>
   <header id="header" class="header">
     <div class=" container ">
       <a href="/" aria-label="go to home page"><span class="bold">Manuel nunez</span></a>
       <nav id="navigation" class="navigation">
         <div class="navigation-ctn">
-          <button class="btn-outline no-desktop">
+          <div id="menu" class="menu" aria-hidden="true">
+            <div class="container">
+              <button id="close-menu-btn" class="close-menu-btn" aria-controls="menu" aria-label="close">
+                <span class="sr-only">close menu</span>
+                <span aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -1 24 24">
+                    <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M19 5L5 19M5 5l14 14" color="#efefef" />
+                  </svg>
+                </span>
+              </button>
+              <ul>
+                <li><a href="#hero">Home</a></li>
+                
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work-timeline">Experience</a></li>
+              </ul>
+            </div>
+          </div>
+          <button id="open-menu-btn" class="btn-outline" aria-controls="menu" aria-expanded="false" aria-label="open">
             <span class="sr-only">Menu</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path fill="currentColor"
@@ -32,11 +52,11 @@
     <section id="hero" class="hero">
       <div class="container split-container">
         <div class="split__first">
-          <h1>Hola there, I am <span class="heading text-2xl">Manuel, Full-Stack Web Developer</span></h1>
+          <h1><span class="greeting">Hola there, I am </span><span class="heading text-2xl">Manuel, Full-Stack Web
+              Developer</span></h1>
           <p class="text-max">Full-Stack Web Developer, with nearly a decade of experience. Constantly learning and
-            applying new ideas to
-            improve my work. I enjoy collaborating, sharing ideas, and building connections that drive growth and
-            innovation.</p>
+            applying new ideas to improve my work. I enjoy collaborating, sharing ideas, and building connections that
+            drive growth and innovation.</p>
         </div>
         <div class="address split__second">
           <a href="https://www.google.com/maps/place/Fort+Worth,+TX/@32.8000201,-97.647294,10z/data=!3m1!4b1!4m6!3m5!1s0x864e6e122dc807ad:0xa4af8bf8dd69acbd!8m2!3d32.7554883!4d-97.3307658!16zL20vMGYyczY?entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D"
@@ -69,21 +89,17 @@
         </div>
 
         <div class="cards-wrapper">
-          <!-- indexed-card -->
           <div class="indexed-card">
             <span class="section-index" aria-hidden="true">[01]</span>
             <h3 class="heading text-lg">Accessibility Engineering</h3>
-
             <div class="tags">
               <a href="">WCAG</a><span aria-hidden="true">•</span>
               <a href="">ARIA</a><span aria-hidden="true">•</span>
               <a href="">Screen Readers</a>
             </div>
-
-            <p>Designing and developing fully accessible user interfaces that comply with WCAG standards. I
-              implement semantic HTML, ARIA roles, keyboard navigation, and screen reader enhancements to ensure
-              usability
-              for all users, regardless of ability.</p>
+            <p>Designing and developing fully accessible user interfaces that comply with WCAG standards. I implement
+              semantic HTML, ARIA roles, keyboard navigation, and screen reader enhancements to ensure usability for all
+              users, regardless of ability.</p>
           </div>
           <!-- indexed-card -->
           <div class="indexed-card">
@@ -96,74 +112,58 @@
               <a href="">Screen Readers</a>
             </div>
 
-            <p class="desc">Designing and developing fully accessible user interfaces that comply with WCAG standards. I
-              implement semantic HTML, ARIA roles, keyboard navigation, and screen reader enhancements to ensure
-              usability
-              for all users, regardless of ability.</p>
+            <p class="desc">Designing and developing fully accessible user interfaces that comply with WCAG standards.
+              Implement semantic HTML, ARIA roles, keyboard navigation, and screen reader enhancements to ensure
+              usability for all users, regardless of ability.</p>
           </div>
-          <!-- indexed-card -->
           <div class="indexed-card">
             <span class="section-index" aria-hidden="true">[03]</span>
             <h3 class="heading text-lg">Accessibility Engineering</h3>
-
             <div class="tags">
               <a href="">WCAG</a><span aria-hidden="true">•</span>
               <a href="">ARIA</a><span aria-hidden="true">•</span>
               <a href="">Screen Readers</a>
             </div>
-
             <p class="desc">Designing and developing fully accessible user interfaces that comply with WCAG standards. I
               implement semantic HTML, ARIA roles, keyboard navigation, and screen reader enhancements to ensure
-              usability
-              for all users, regardless of ability.</p>
+              usability for all users, regardless of ability.</p>
           </div>
-          <!-- indexed-card -->
+
           <div class="indexed-card">
             <span class="section-index" aria-hidden="true">[04]</span>
             <h3 class="heading text-lg">Accessibility Engineering</h3>
-
             <div class="tags">
               <a href="">WCAG</a><span aria-hidden="true">•</span>
               <a href="">ARIA</a><span aria-hidden="true">•</span>
               <a href="">Screen Readers</a>
             </div>
-
             <p class="desc">Designing and developing fully accessible user interfaces that comply with WCAG standards. I
               implement semantic HTML, ARIA roles, keyboard navigation, and screen reader enhancements to ensure
-              usability
-              for all users, regardless of ability.</p>
+              usability for all users, regardless of ability.</p>
           </div>
-          <!-- indexed-card -->
           <div class="indexed-card">
             <span class="section-index" aria-hidden="true">[05]</span>
             <h3 class="heading text-lg">Accessibility Engineering</h3>
-
             <div class="tags">
               <a href="">WCAG</a><span aria-hidden="true">•</span>
               <a href="">ARIA</a><span aria-hidden="true">•</span>
               <a href="">Screen Readers</a>
             </div>
-
             <p class="desc">Designing and developing fully accessible user interfaces that comply with WCAG standards. I
               implement semantic HTML, ARIA roles, keyboard navigation, and screen reader enhancements to ensure
-              usability
-              for all users, regardless of ability.</p>
+              usability for all users, regardless of ability.</p>
           </div>
-          <!-- indexed-card -->
           <div class="indexed-card">
             <span class="section-index" aria-hidden="true">[06]</span>
             <h3 class="heading text-lg">Accessibility Engineering</h3>
-
             <div class="tags">
               <a href="">WCAG</a><span aria-hidden="true">•</span>
               <a href="">ARIA</a><span aria-hidden="true">•</span>
               <a href="">Screen Readers</a>
             </div>
-
             <p class="desc">Designing and developing fully accessible user interfaces that comply with WCAG standards. I
               implement semantic HTML, ARIA roles, keyboard navigation, and screen reader enhancements to ensure
-              usability
-              for all users, regardless of ability.</p>
+              usability for all users, regardless of ability.</p>
           </div>
         </div>
       </div>
@@ -177,6 +177,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum consequuntur, blanditiis consequatur ad amet
           velit accusantium molestias. Aspernatur, beatae explicabo.
         </div>
+
         <div class="action-card-wrapper">
           <!-- action card -->
           <div class="action-card">
@@ -187,9 +188,9 @@
             </div>
             <h3 class="heading text-lg">Accessible Panel</h3>
             <div class="desc">Designed and developed a customizable accessibility panel to improve user experience
-              across
-              diverse needs. Includes features like high contrast mode, dyslexia-friendly font, and screen reader
-              enhancements — all implemented with clean, framework-agnostic JavaScript.</div>
+              across diverse needs. Includes features like high contrast mode, -friendly font, and screen reader
+              enhancements — all implemented with clean, framework-agnostic JavaScript.
+            </div>
             <button class="btn-outline btn-lg">View &#8203;<span class="sr-only">project name</span> project
               <span class="btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
                   <path fill="currentColor"
@@ -222,7 +223,7 @@
     <section id="work-timeline" class="work-timeline">
       <div class="container">
         <div class="intro-wrap">
-          <h2 class="heading text-1xl">Work Timeline</h2>
+          <h2 class="heading text-1xl">Experience</h2>
           <p>Read firsthand accounts from clients who have experienced the value and impact of my work. Their stories
             reflect the quality and dedication I bring to every project.</p>
         </div>
@@ -328,7 +329,7 @@
         <h2 class="heading text-lg">Ready to build something together? Let’s connect.</h2>
         <div class="btn-wrapper">
           <button class="btn-simple btn-lg">Contact me</button>
-          <button class="btn-lg">Schedule a call</button>
+          <button class="btn-outline btn-lg">Schedule a call</button>
         </div>
       </div>
 
@@ -358,7 +359,7 @@
   </footer>
 
   <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/js/main.js"></script>
 </body>
 
 </html>
